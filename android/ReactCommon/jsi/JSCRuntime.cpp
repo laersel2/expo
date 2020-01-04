@@ -1284,7 +1284,7 @@ jsi::Runtime::PointerValue* JSCRuntime::makeStringValue(
 }
 
 jsi::Symbol JSCRuntime::createSymbol(JSValueRef sym) const {
-  return make<jsi::Symbol>(makeSymbolValue(sym));
+  return jsi::make<jsi::Symbol>(makeSymbolValue(sym));
 }
 
 jsi::String JSCRuntime::createString(JSStringRef str) const {
